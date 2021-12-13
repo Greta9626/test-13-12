@@ -45,14 +45,9 @@ export class DisplayWeatherComponent implements OnInit {
       /* this.propNames = (Object.keys(elem)); */
       /* elem.weather.map((item: IWeather) => this.weather = item); */
       /* this.weather = elem.weather[0]; */
-      
-      this.coord = elem.coord;
-      
-      
 
       this.main = elem.main;
      /*  this.wind = elem.wind.speed; */
-     console.log(elem)
      
     });
 
