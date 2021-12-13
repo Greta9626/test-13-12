@@ -1,0 +1,35 @@
+<form>
+    <input name="city" [(ngModel)]="city" >
+    <button type="button" class="btn btn-primary" (click)="onFindCity()">Submit</button>
+</form>
+
+<section class="vh-100" style="background-color: #4B515D;">
+    <div class="container py-5 h-100">
+
+        <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-md-8 col-lg-6 col-xl-4">
+
+                <div class="card" style="color: #4B515D; border-radius: 35px;">
+                    <div class="card-body p-4">
+
+                        <div class="d-flex">
+                            <h6 class="flex-grow-1">{{name}}</h6>
+                            <h6>{{date | date: 'dd'}}/{{date | date:'MM'}}/{{date | date: 'yyyy'}}</h6>
+                        </div>
+
+                        <div class="d-flex flex-column text-center mt-5 mb-4">
+                            <h6 class="display-4 mb-0 font-weight-bold" style="color: #1C2331;"> {{weather}}°C </h6>
+                            <span class="medium" style="color: #868B94">{{description}}</span>
+                        </div>
+
+                        <div>
+                            <img id="weather-icon" src={{imgUrlFormattato}}>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</section>
